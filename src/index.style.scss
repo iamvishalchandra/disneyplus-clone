@@ -1,0 +1,44 @@
+$textColor: #f9f9f9;
+
+@mixin font($minwidth, $fontsize, $maxwidth: null) {
+  @if $maxwidth and $minwidth {
+    @media only screen and (min-width: $minwidth) and (max-width: $maxwidth) {
+      body {
+        font-size: $fontsize;
+      }
+    }
+  } @else {
+    @if $maxwidth {
+      @media only screen and (max-width: $maxwidth) {
+        body {
+          font-size: $fontsize;
+        }
+      }
+    }
+    @if $minwidth {
+      @media only screen and (min-width: $minwidth) {
+        body {
+          font-size: $fontsize;
+        }
+      }
+    }
+  }
+}
+
+body {
+  background-color: #040714;
+  min-width: 350px;
+  color: $textColor;
+  padding: 0;
+  margin: 0;
+  font-family: Avenir-Roman, sans-serif;
+}
+
+a {
+  color: $textColor;
+  text-decoration: none;
+}
+
+@include font(768px, 16px);
+@include font(480px, 15px, 768px);
+@include font(null, 14px, 479px);
