@@ -1,8 +1,8 @@
-.newToDisney {
+.videoSection {
   padding-bottom: 26px;
 }
 
-.newToDisney__content {
+.videoSection__content {
   display: -ms-grid;
   display: grid;
   grid-gap: 25px;
@@ -12,9 +12,9 @@
 }
 
 @media (max-width: 768px) {
-  .newToDisney__content {
+  .videoSection__content {
     -ms-grid-columns: (minmax(0, 1fr))[2];
         grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-/*# sourceMappingURL=NewToDisney.style.css.map */
+/*# sourceMappingURL=VideoSection.style.css.map */

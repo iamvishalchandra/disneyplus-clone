@@ -1,4 +1,4 @@
-.userRecommendations {
+.videoCard {
   padding-top: 56.25%;
   border-radius: 10px;
   -webkit-box-shadow: black 0 26px 30px -10px, black 0 16px 10px -10px;
@@ -11,7 +11,7 @@
   border: 3px solid rgba(249, 249, 249, 0.1);
 }
 
-.userRecommendations__link__image {
+.videoCard__link__image {
   position: absolute;
   top: 0;
   z-index: 1;
@@ -26,11 +26,11 @@
   transition: opacity 500ms ease-in-out 0s;
 }
 
-.userRecommendations:hover {
+.videoCard:hover {
   -webkit-box-shadow: black 0 40px 58px -16px, black 0 30px 22px -10px;
           box-shadow: black 0 40px 58px -16px, black 0 30px 22px -10px;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   border-color: rgba(249, 249, 249, 0.8);
 }
-/*# sourceMappingURL=UserRecommendations.style.css.map */
+/*# sourceMappingURL=VideoCard.style.css.map */

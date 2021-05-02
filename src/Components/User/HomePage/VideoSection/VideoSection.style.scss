@@ -1,4 +1,4 @@
-.newToDisney {
+.videoSection {
   padding-bottom: 26px;
 
   &__content {
@@ -10,7 +10,7 @@
 }
 
 @media (max-width: 768px) {
-  .newToDisney {
+  .videoSection {
     &__content {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }

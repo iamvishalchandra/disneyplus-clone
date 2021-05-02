@@ -13,16 +13,17 @@ export const Header = () => {
   const dispatch = useDispatch();
   const history = useHistory();
 
-  const { name, email, photo } = useSelector((state) => state.user);
+  const { name, photo } = useSelector((state) => state.user);
 
   useEffect(() => {
     auth.onAuthStateChanged(async (user) => {
       if (user) {
         setUser(user);
         history.push("/home");
-      }
+      } else history.push("/");
     });
   }, [name]);
+  console.log(name);
 
   const handleAuth = () => {
     if (!name) {
@@ -55,7 +56,7 @@ export const Header = () => {
   };
   return (
     <nav className="header">
-      <Link className="header__logo" to="#">
+      <Link className="header__logo" to="/home">
         <img
           className="header__logo__image"
           src="/images/logo.svg"
@@ -65,7 +66,11 @@ export const Header = () => {
       {name ? (
         <>
           <div className="header__menu">
-            <HeaderOptions icon="/images/menu/home.svg" title="HOME" link="#" />
+            <HeaderOptions
+              icon="/images/menu/home.svg"
+              title="HOME"
+              link="/home"
+            />
             <HeaderOptions
               icon="/images/menu/search.svg"
               title="SEARCH"
