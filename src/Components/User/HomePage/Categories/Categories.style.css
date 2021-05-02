@@ -1,0 +1,53 @@
+.categories {
+  cursor: pointer;
+  position: relative;
+  padding-top: 56.25%;
+  border-radius: 10px;
+  -webkit-box-shadow: black 0 26px 30px -10px, black 0px 16px 10px -10px;
+          box-shadow: black 0 26px 30px -10px, black 0px 16px 10px -10px;
+  overflow: hidden;
+  -webkit-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  border: 3px solid rgba(249, 249, 249, 0.1);
+}
+
+.categories__links__image {
+  position: absolute;
+  top: 0;
+  display: block;
+  inset: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 1;
+  -webkit-transition: opacity 500ms ease-in-out 0s;
+  transition: opacity 500ms ease-in-out 0s;
+  width: 100%;
+  z-index: 1;
+}
+
+.categories__links__video {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.categories__links__video:hover {
+  opacity: 1;
+}
+
+.categories:hover {
+  -webkit-box-shadow: black 0 40px 58px -16px, black 0 30px 22px -10px;
+          box-shadow: black 0 40px 58px -16px, black 0 30px 22px -10px;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  border-color: rgba(249, 249, 249, 0.8);
+}
+
+.categories:hover video {
+  opacity: 1;
+}
+/*# sourceMappingURL=Categories.style.css.map */

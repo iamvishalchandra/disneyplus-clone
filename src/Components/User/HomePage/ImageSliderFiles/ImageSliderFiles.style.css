@@ -1,0 +1,27 @@
+.imageSliderFiles {
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.imageSliderFiles__link {
+  border-radius: 4px;
+  -webkit-box-shadow: black 0 26px 30px -10px, black 0px 16px 10px -10px;
+          box-shadow: black 0 26px 30px -10px, black 0px 16px 10px -10px;
+  display: block;
+  position: relative;
+  padding: 4px;
+}
+
+.imageSliderFiles__link__image {
+  width: 100%;
+  height: 100%;
+}
+
+.imageSliderFiles__link:hover {
+  padding: 0;
+  border: 4px solid rgba(249, 249, 249, 0.8);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+/*# sourceMappingURL=ImageSliderFiles.style.css.map */

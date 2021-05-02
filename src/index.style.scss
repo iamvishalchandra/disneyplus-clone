@@ -33,7 +33,9 @@ body {
   margin: 0;
   font-family: Avenir-Roman, sans-serif;
 }
-
+* {
+  outline: none;
+}
 a {
   color: $textColor;
   text-decoration: none;
