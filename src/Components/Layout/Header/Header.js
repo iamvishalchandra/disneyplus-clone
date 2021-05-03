@@ -23,7 +23,7 @@ export const Header = () => {
       } else history.push("/");
     });
   }, [name]);
-  console.log(name);
+  
 
   const handleAuth = () => {
     if (!name) {
